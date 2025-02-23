@@ -2,6 +2,7 @@
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
+import { AppChart } from "@/components/app-chart"
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <main>
         <SidebarTrigger />
       </main>
-        
+      <div className="border border-solid border-black">
+      <AppChart />
+      </div>
     </SidebarProvider>
   )
 }
